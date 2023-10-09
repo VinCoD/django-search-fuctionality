@@ -1,0 +1,10 @@
+<div>
+    {% for book in books %}
+        <p><b>{{ book.name }}</b></p>
+        <p><i>{{book.author}}</i></p>
+        <p>{{ book.synopsis }}</p>
+    {% empty %}
+        <p>No books matching your search at the moment</p>
+
+    {% endfor %}
+</div>

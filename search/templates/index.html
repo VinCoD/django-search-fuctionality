@@ -1,0 +1,9 @@
+<div >
+           
+    <form action="{% url 'search' %}" method="post">
+        {% csrf_token %}
+        <input placeholder="by Name, e.g. Harry Porter" name="search"/>
+        <input type="submit" value="Search"/>
+    </form>
+
+</div>
